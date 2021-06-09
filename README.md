@@ -12,7 +12,7 @@
 
 ## About the Project
 
-Setting up and running a website on pythonanywhere is easy and takes little to no time. However, maintaining the web app and ensuring it runs forever is a pain. Hence, this script solves it. With the free tier PythonAnywhere you run one task daily. Using this script as the one task solves this problem.
+Setting up and running a website on pythonanywhere is easy and takes little to no time. However, maintaining the web app and ensuring it runs forever is a pain. Hence, this script solves it. With the free tier PythonAnywhere you can run one task/script daily.
 
 ## Tech Stack
 - Python
