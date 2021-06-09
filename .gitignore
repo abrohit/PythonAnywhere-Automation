@@ -1,1 +1,6 @@
+#General
 .env
+
+#Ignores Drivers.
+chromedriver.exe
+chromedriver
