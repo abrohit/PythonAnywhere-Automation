@@ -1,4 +1,4 @@
-from dotenv import load_dotenv, dotenv_values
+from dotenv import dotenv_values
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -7,18 +7,19 @@ import time
 
 class Automate():
 
+    #Initializes class, Params: email and password of user.
     def __init__(self, email: str, password: str):
 
         self.BASEURL = ''
 
 
         self.options = Options()
-        self.options.add_argument("--start-maximized")
-        self.options.add_argument('disable-notifications')
-        self.options.add_argument('--disable-infobars')
-        self.options.add_argument('--headless')
+        self.options.add_argument("--start-maximized")#Maximizes the browser.
+        self.options.add_argument('disable-notifications')#Disables all notifcations.
+        self.options.add_argument('--disable-infobars')#Removes 'Controlled by bot' on Chrome.
+        self.options.add_argument('--headless')#Hides the browser.
 
-        self.driver = webdriver.Chrome('chromedriver.exe', options = self.options)
+        self.driver = webdriver.Chrome('chromedriver.exe', options = self.options)#Path to driver + Initializes driver.
 
         self.EMAIL = email
         self.PASS = password
@@ -26,7 +27,7 @@ class Automate():
     #Logs the user in.
     def login(self):
 
-        self.driver.get('https://www.pythonanywhere.com/login/')
+        self.driver.get('https://www.pythonanywhere.com/login/')#Gets login page.
 
         self.driver.find_element_by_name('auth-username').send_keys(self.EMAIL)#Enters Email.
         time.sleep(0.5)
