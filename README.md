@@ -1,6 +1,6 @@
 <h1 align="center">PythonAnywhere Automation</h1>
 <p align="center">
-  Automates running web app on PythonAnywhere for free forever.
+  Automates running a web app on PythonAnywhere for free forever.
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -12,7 +12,7 @@
 
 ## About the Project
 
-Setting up and running a website on pythonanywhere is easy and takes little to no time. However, maintaining the web app and ensuring it runs forever is a pain. Hence, this script solves it. With the free tier PythonAnywhere lets you run one task daily. This script solves the problem of me logging in every three months to run the web app.
+Setting up and running a website on pythonanywhere is easy and takes little to no time. However, maintaining the web app and ensuring it runs forever is a pain. Hence, this script solves it. With the free tier PythonAnywhere you run one task daily. Using this script as the one task solves this problem.
 
 ## Tech Stack
 - Python
